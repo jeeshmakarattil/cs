@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Jsassignment 33</title>
+    <script>
+      function check()
+      {
+        var graduate=document.getElementById('graduate').checked;
+        var postgraduate=document.getElementById('postgraduate').checked; 
+        if(graduate==false && postgraduate==false)
+        {
+          document.getElementById("msg").innerHTML="please choose your Qualification ";
+          document.getElementById("msg").style.color = "red";
+        return false; 
+        }
+       
+      }
+    </script>
+</head>
+<body>
+  
+    <form action="another.html" method="post" onsubmit="return check()">
+      <table border="0" bgcolor="#18ffff">
+        <tr>
+          <th >
+        <h1>CheckBox Validation</h1>
+      </th>
+    </tr>
+    <tr>
+      <td align="center">
+         Qualification:<input type="checkbox" name="gender" value="male" id="graduate"/>Graduate
+          <input type="checkbox" name="gender" value="female" id="postgraduate">Postgraduate </td><br>
+        </tr>
+        <tr>
+          <td align ="center"><label id="msg"></label></td>
+        </tr>
+        <tr>
+          <td align="center"><input type="submit" value="Submit" onclick="return check();"></td></tr>
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+<head>
+	<style>
+	.width{width: 400}
+	</style>
+	<script type="text/javascript">
+	function func()
+	{
+		var Uname=document.getElementById("name").value;
+		var add=document.getElementById("address").value;
+		var mail=document.getElementById("email").value;
+		var mob=document.getElementById("mob").value;
+		var pass=document.getElementById("pass").value;
+		var cpass=document.getElementById("cpass").value;
+		document.getElementById("fname_msg").innerHTML=" ";
+		document.getElementById("add_msg").innerHTML=" ";
+		document.getElementById("mail_msg").innerHTML=" ";
+		document.getElementById("mob_msg").innerHTML="";
+		document.getElementById("pass_msg").innerHTML=" ";
+		document.getElementById("cpass_msg").innerHTML=" ";
+
+		if(Uname=="")
+		{
+			document.getElementById("fname_msg").innerHTML="Enter your name ";
+			document.getElementById("fname_msg").style.color = "red";
+			
+		}
+
+		if(add=="")
+		{
+			document.getElementById("add_msg").innerHTML="Enter your address ";
+				document.getElementById("add_msg").style.color = "red";
+			
+		}
+		if(mail=="")
+		{
+			document.getElementById("mail_msg").innerHTML="Enter a valid mail id ";
+				document.getElementById("mail_msg").style.color = "red";
+			
+		}
+		if(mob=="")
+		{
+			document.getElementById("mob_msg").innerHTML="Enter your Mobile Number ";
+				document.getElementById("mob_msg").style.color = "red";
+			
+
+		}
+		if(pass=="")
+		{
+			document.getElementById("pass_msg").innerHTML="Enter your Password ";
+				document.getElementById("pass_msg").style.color = "red";
+			
+		}
+		if(cpass=="")
+		{
+			document.getElementById("cpass_msg").innerHTML="Re-enter your Password ";
+				document.getElementById("cpass_msg").style.color = "red";
+			}
+			return false;
+
+		
+	}
+
+	</script>
+	<title></title>
+</head>
+<body>
+<form>
+	<table border="0" bgcolor="cyan"  height="150">
+		<tr>
+			<th colspan="2">Student registration form</th>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td><input type="text" id="name"></td>
+			<td class="width"><label id="fname_msg"></label></td>
+		</tr>
+		<tr>
+	<td>Personal Address</td>
+	<td><input type="text" id="address"></td>
+	<td class="width"><label id="add_msg"></label></td>
+</tr>
+<tr>
+	<td>EmailId</td>
+	<td><input type="text" id="email"></td>
+<td><label id="mail_msg"></label></td></tr>
+	<tr>
+	<td>Mobile Number</td>
+	<td><input type="text" id="mob"></td>
+	<td class="width"><label id="mob_msg"></label></td>
+</tr>
+<tr>
+	<td>Password</td>
+	<td><input type="text" id="pass"></td>
+	<td class="width"><label id="pass_msg"></label></td>
+</tr>
+<tr>
+	<td>Confirm Password</td>
+	<td><input type="text" id="cpass"></td>
+	<td class="width"><label id="cpass_msg"></label></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="button" value="submit form"  onclick="func();"></td>
+</tr>
+</table>
+</body>
+</html>

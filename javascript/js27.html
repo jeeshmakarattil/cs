@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function fun()
+	{
+		var wel=document.getElementById('welcome');
+		var FirstName=document.getElementById('fname');
+		var LastName=document.getElementById('lname');
+		var Email=document.getElementById('email');
+		wel.innerHTML="welcome  "+FirstName.value+"  " +LastName.value+".  My mail id is  "+Email.value;
+	}
+	</script>
+	<title>
+	</title>
+</head>
+<body>
+
+<form>
+	FirstName<input type="text" id="fname"><br>
+	LastName<input type="text" id="lname"><br>
+	Email<input type="text" id="email"><br>
+	Password<input type="password" id="pass"><br>
+	<input type="button" id="but" value="SignUp" onclick="fun();"><br>
+	<p id="welcome"></p>
+</body>
+</html>

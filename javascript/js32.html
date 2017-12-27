@@ -1,0 +1,44 @@
+<html>
+<head>
+
+    <script>
+      function check()
+      {
+        var male=document.getElementById("gender_male").checked;
+        var female=document.getElementById("gender_female").checked; 
+        if((male==false)&&(female==false))
+        {
+          document.getElementById("msg").innerHTML="please choose an option ";
+          document.getElementById("msg").style.color = "red";
+        return false;
+        }
+       
+      }
+    </script>
+</head>
+    <body>
+    <form>
+      <table border="0" bgcolor="#18ffff">
+        <tr>
+          <th >
+        <h1>Radio Button Validation</h1>
+      </th>
+    </tr>
+    <tr>
+      <td align="center">
+         Gender:<input type="radio" name="male" value="male" id="gender_male"/>Male
+          <input type="radio" name="male" value="female" id="gender_female">Female </td><br>
+        </tr>
+        <tr>
+          <td align="center">
+        <label id="msg"></label>
+      </td>
+      </tr>
+      <tr>
+          <td align="center"><input type="submit" value="Submit" onclick="return check()"></td>
+        </tr>
+        </table>
+    </form>
+
+</body>
+</html>

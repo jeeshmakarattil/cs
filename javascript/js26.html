@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var image_tracker='a';
+		function change()
+		{
+			var image=document.getElementById("img");
+			if(image_tracker=='a')
+			{
+				image.src="download (2).jpg";
+				image_tracker='b';
+
+			}
+			else
+			{
+				image.src="download.jpg";
+				image_tracker='a';
+			}
+		}
+		setTimeout('change()',2000);
+
+		var timer=setInterval('change()',5000);
+	</script>
+	<title></title>
+</head>
+<body>
+<img src="download.jpg" id="img" onclick=clearInterval(timer);>
+</body>
+</html>

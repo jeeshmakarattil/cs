@@ -1,0 +1,256 @@
+<html>
+<head>
+	<title>My website</title>
+	<script type="text/javascript">
+	function validate()
+	{
+		var email=document.getElementById("mail").value;
+		var Passwd=document.getElementById("pass1").value;
+		document.getElementById("mail").style.borderColor="grey";
+			document.getElementById("emsg").innerHTML=" ";
+			document.getElementById("pass1").style.borderColor="grey";
+			document.getElementById("pmsg").innerHTML=""; 
+		if(email=="")
+		{
+			document.getElementById("mail").style.borderColor="red";
+			document.getElementById("emsg").innerHTML="Enter your email id ";
+		}
+		 if(Passwd=="")
+		{
+			document.getElementById("pass1").style.borderColor="red";
+			document.getElementById("pmsg").innerHTML="Enter your Password"; 
+		}
+
+	}
+	function func()
+	{
+		var fname=document.getElementById("fname").value;
+		var lnm=document.getElementById('lname').value;
+		var Mobile=document.getElementById("mob").value;
+		var mail=document.getElementById("email").value;
+		var pswrd=document.getElementById("pass").value;
+		var male=document.getElementById("gender_male").checked;
+        var female=document.getElementById("gender_female").checked; 
+			document.getElementById("fname").style.borderColor="grey";
+			document.getElementById("msg").innerHTML=" ";
+			document.getElementById("lname").style.borderColor="grey";
+			document.getElementById("lmsg").innerHTML=" ";
+			document.getElementById("mob").style.borderColor="grey";
+			document.getElementById("mmsg").innerHTML=" ";
+			document.getElementById("email").style.borderColor="grey";
+			document.getElementById("emailmsg").innerHTML=" ";
+			document.getElementById("pass").style.borderColor="grey";
+			document.getElementById("passmsg").innerHTML="";
+			document.getElementById("gender").innerHTML=" ";
+          document.getElementById("gender").style.color = "grey";
+		
+		if(fname=="")
+		{	document.getElementById("fname").style.borderColor="red";
+			document.getElementById("msg").innerHTML="Enter your name ";
+			
+			
+		}
+
+		if(lnm=="")
+		{
+			document.getElementById("lname").style.borderColor="red";
+			document.getElementById("lmsg").innerHTML="Enter your Surname ";
+		}
+		if(Mobile=="")
+		{
+			document.getElementById("mob").style.borderColor="red";
+			document.getElementById("mmsg").innerHTML="Enter your Mobile Number ";
+		}
+		if(mail=="")
+		{
+			document.getElementById("email").style.borderColor="red";
+			document.getElementById("emailmsg").innerHTML="Enter your email id ";
+		}
+		if(pswrd=="")
+		{
+			document.getElementById("pass").style.borderColor="red";
+			document.getElementById("passmsg").innerHTML="Enter your Password"; 
+		}
+
+        if((male==false)&&(female==false))
+        {
+          document.getElementById("gender").innerHTML="Enter your gender ";
+          document.getElementById("gender").style.color = "red";
+		}
+	}
+	</script>
+</head>
+<body>
+<table width="100%" cellspacing="0">
+	<tr bgcolor="#3b5998">
+		<td width="100%"><img src="logo.png" width="100"></td>
+		<td align="left" >
+			<font color="white">Email or phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password</font>
+
+			<br><input type="text" id="mail"><input type="text" id="pass1"><input type="button" value="LOGIN" onclick="validate();return false;">
+			<br><label  style="color:red;height:10px" id="emsg"></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label  style="color:red;height:10px;width=50%;" id="pmsg"></label>
+			
+			</td>
+		</tr>
+		<tr bgcolor="#edf0f5" height="600px">
+			<td valign="top" align="center"><br><br>
+			<table border="0" width="80%">
+				<tr>
+					<td><h2><font face="verdana"> Connect with friends and the world around you on facebook</font>
+					</h2>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="connect.png" width="600">
+					
+					
+				</td>
+
+			</tr>
+			</table>
+		</td>
+		<td valign="top" align="center">
+			<div id="main">
+	<form name="registration">
+<h1>SignUp</h1>
+
+
+			<table border="0" cellspacing="8" cellpadding="0">
+				<tr>
+					<td>
+						<input class="box" type="text"  name="fname" id="fname" placeholder="Firstname" style="height:40px" size="32">
+				
+			</td>
+
+					<td>
+						<input class="box" type="text" placeholder="Surname" id="lname" name="lname" style="height:40px" size="32px" >
+					</td>
+				</tr>
+				<tr>
+					<td style="color:red;height:20px"><label id="msg"></label></td>
+					<td style="color:red;height:20px"><label id="lmsg"></label></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input class="box1" type="text" size="70" placeholder="Mobile Number" id="mob" name="mob" style="height:40px" size="80"></td>
+					</tr>
+					<tr>
+						<td style="color:red;height:20px"><label id="mmsg"></label></td>
+					</tr>
+					<tr>
+					<td colspan="2"><input class="box1" type="text" size="70" placeholder=" Email Address" name="email" id="email" style="height:40px" size="80"></td>
+					</tr>
+					<tr>
+						<td style="color:red;height:20px"><label id="emailmsg"></label></td>
+					</tr>
+				
+				
+					<tr>
+						<td colspan="2"><input class="box1" type="text" size="70" placeholder="Password" id="pass"  name="pass" style="height:40px" size="80"></td>
+					</tr>
+					<tr>
+						<td style="color:red;height:20px"><label id="passmsg"></label></td>
+					</tr>
+					<tr>
+						<td colspan="2"><h5>Birthday</h5></td>
+					</tr>
+					<tr>
+						<td>
+							<select>
+ 								 <option value="date">Date</option>
+  								<option value="1">1</option>
+  								<option value="2">2</option>
+ 								 <option value="3">3</option>
+ 								 <option value="4">4</option>
+  								<option value="5">5</option>
+ 								 <option value="6">6</option>
+ 								 <option value="7">7</option>
+  								<option value="8">8</option>
+ 								 <option value="9">9</option>
+							</select>
+
+							<select>
+ 								 <option value="Month">Month</option>
+  								<option value="january">jan</option>
+  								<option value="february">feb</option>
+ 								 <option value="march">march</option>
+ 								 <option value="april">april</option>
+  								<option value="may">may</option>
+ 								 <option value="june">june</option>
+ 								 <option value="july">july</option>
+  								<option value="august">august</option>
+ 								 <option value="september">september</option>
+ 								  <option value="october">october</option>
+  								<option value="november">november</option>
+ 								 <option value="december">december</option>
+							</select>
+						
+
+							<select>
+ 								 <option value="date">year</option>
+ 								 <option value="1">1983</option>
+  								<option value="2">1984</option>
+ 								 <option value="3">1985</option>
+ 								 <option value="4">1986</option>
+  								<option value="5">1987</option>
+ 								 <option value="6">1988</option>
+ 								 <option value="7">1989</option>
+  								<option value="1">1990</option>
+  								<option value="2">1991</option>
+ 								 <option value="3">1992</option>
+ 								 <option value="4">1993</option>
+  								<option value="5">1994</option>
+ 								 <option value="6">1995</option>
+ 								 <option value="7">1996</option>
+  								<option value="8">1997</option>
+ 								 <option value="9">1998</option>
+ 								  <option value="3">1999</option>
+ 								 <option value="4">2000</option>
+  								<option value="5">2001</option>
+ 								 <option value="6">2002</option>
+ 								 <option value="7">2003</option>
+  								<option value="8">2004</option>
+ 								 <option value="9">2005</option>
+ 								  <option value="3">2006</option>
+ 								 <option value="4">2007</option>
+  								<option value="5">2008</option>
+ 								 <option value="6">2009</option>
+ 								 <option value="7">2010</option>
+  								<option value="8">2011</option>
+ 								 <option value="9">2012</option>
+ 								 <option value="5">2013</option>
+ 								 <option value="6">2014</option>
+ 								 <option value="7">2015</option>
+  								<option value="8">2016</option>
+ 								 <option value="9">2017</option>
+ 								 <option value="8">2018</option>
+ 								 <option value="9">2019</option>
+							</select>
+						</td>
+						
+					</tr>
+					<tr>
+						<td>Gender
+						<input type="radio" id="gender_female">female
+						<input type="radio" id="gender_male">male</td>
+					</tr>
+					<tr>
+						<td><label id="gender"></label></td>
+					</tr>
+					<tr>
+
+						<td colspan="2"><font color="#666666" face="verdana,arial,helvitica,sans-serif" size="1">By clicking create an account you agree to our<font color="blue"> terms</font> and <br/>confirm that you have read our <font color="blue">data policy</font> including our<br/> cookie use policy. You may get sms notification<br/> from facebook and can opt out at any time.</font>
+						</td>
+					</tr>
+					<tr>
+						<td  colspan="2" ><button type="submit" style="background: rgb(11,126,69)" class="button"  width="140" onclick="func();return false;" >Sign Up Now</button></td>
+					</tr>
+				
+
+		</td>
+	</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
