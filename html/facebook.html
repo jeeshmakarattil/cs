@@ -1,0 +1,113 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function validate()
+	{
+
+	Firstname=document.getElementById("fname");
+	Lastname=document.getElementById("lname");
+	Email=document.getElementById("email");
+	Mobile=document.getElementById("mob");
+	Pass=document.getElementById("pass")
+	Firstname.setAttribute("style","border-color:default");
+	Lastname.setAttribute("style","border-color:default");
+	Email.setAttribute("style","border-color:default");
+	Mobile.setAttribute("style","border-color:default");
+	Pass.setAttribute("style","border-color:default");
+	if(Firstname.value=="")
+	{
+		Firstname.setAttribute("style","border-color:red");
+
+		return false;
+	}
+	else if(Lastname.value=="")
+	{
+		Lastname.setAttribute("style","border-color:red");
+		return false;
+	}
+	
+
+	else if(Email.value=="")
+	{
+		Email.setAttribute("style","border-color:red");
+		return false;
+	}
+	
+
+	
+	else if(Mobile.value=="")
+	{
+		Mobile.setAttribute("style","border-color:red");
+		return false;
+	}
+	else if (Pass.value=="")
+	{
+		Pass.setAttribute("style","border-color:red");
+		return false;
+	}
+	}
+	</script>
+	<title>My website</title>
+</head>
+<body>
+<table width="100%" cellspacing="0">
+	<tr bgcolor="#3b5998">
+		<td width="55%"><img src="fblogo.jpg" width="100"></td>
+		<td align="left"><input type="text"><input type="text">
+			<input type="button" value="LOGIN">
+			</td>
+		</tr>
+		<tr bgcolor="#edf0f5" height="600px">
+			<td valign="top" align="center"><br><br>
+			<table border="1" width="80%">
+				<tr>
+					<td><h2><font face="verdana"> Connect with friends and the world around you on facebook</font>
+					</h2>
+				</td>
+			</tr>
+			<tr>
+				<td><font face="verdana"><br>
+					<img src="i.png" width="20">&nbsp;&nbsp;See photos and updates from friends in news feed<br><br>
+					<img src="i.png" width="20">&nbsp;&nbsp;Share what's new in your life on your timeline<br><br>
+					<img src="i.png" width="20">&nbsp;&nbsp;Find more of what you are looking for with graph search<br>
+					</font>
+				</td>
+
+			</tr>
+			</table>
+		</td>
+		<td valign="top" align="center">
+			<h1>SignUp</h1>
+			<form name="registration" >
+			<table border="0" cellspacing="8" cellpadding="0">
+				<tr>
+					<td>
+						<input type="text" id="fname" name="fname" placeholder="Firstname" style="height:30px" size="20">
+					</td>
+					<td>
+						<input type="text" placeholder="Lastname" id="lname" name="lname" style="height:30px" size="20">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="text" size="70" placeholder="Email" id="email" name="email" style="height:40px"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="text" size="70" placeholder="Mobile number" id="mob" name="mob" style="height:40px"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="text" size="70" placeholder="Password" id="pass" name="pass" style="height:40px"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><font color="#666666" face="verdana,arial,helvitica,sans-serif" size="1">By clicking SignUp, you agree to our terms and condition that you have rea our data use policy ,including our cookie use</font>
+						</td>
+					</tr>
+					<tr>
+						<td  colspan="2" ><input type="submit" value="SignUp" width="140" onclick="return validate()"></td>
+					</tr>
+
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
